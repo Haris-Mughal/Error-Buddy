@@ -1,0 +1,4 @@
+project_id = your_project_id
+
+[functions.analyze-error]
+verify_jwt = false
