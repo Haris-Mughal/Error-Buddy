@@ -1,73 +1,146 @@
-# Welcome to your Lovable project
+# Error Buddy - ExplainMyError
 
-## Project info
+**ExplainMyError** is a developer tool that translates confusing programming errors into clear, human-readable explanations.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Instead of spending hours searching forums or documentation, developers can paste an error message and instantly understand:
 
-## How can I edit this code?
+- what the error means  
+- why it occurred  
+- how to fix it  
+- what the corrected code looks like  
 
-There are several ways of editing your application.
+The goal is simple: **make debugging faster and learning easier.**
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## ✨ Features
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Instant Error Explanation**  
+  Understand complex error messages in simple language.
 
-**Use your preferred IDE**
+- **Root Cause Detection**  
+  See why the error happened instead of just the error text.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Step-by-Step Fix Guidance**  
+  Get clear instructions on how to resolve the issue.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **Corrected Code Output**  
+  Receive a working example showing the fix.
 
-Follow these steps:
+- **Beginner Mode**  
+  Explains concepts using simple wording and analogies.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- **Example Error Library**  
+  Quickly test common errors with prefilled examples.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- **Developer Friendly UI**  
+  Clean dark interface with syntax-highlighted code blocks.
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+## 🧠 How It Works
+
+1. Enter the **programming language**.
+2. Paste the **error message**.
+3. Optionally add the **code snippet** that caused the error.
+4. Click **Analyze Error**.
+
+The system analyzes the error and returns:
+
+- Explanation  
+- Root cause  
+- Suggested fix  
+- Example corrected code  
+
+---
+
+## 🖥️ Example
+
+**Input**
+
+```
+Error:
+TypeError: Cannot read property 'map' of undefined
+```
+
+**Output**
+
+```
+Explanation:
+You attempted to call .map() on a variable that is undefined.
+
+Why it happens:
+The variable expected to hold an array was never initialized or
+the data had not loaded yet.
+
+Fix:
+Ensure the variable exists before calling .map().
+
+Example:
+users?.map(user => ...)
+```
+
+---
+
+## 🧰 Tech Stack
+
+- **Frontend:** React + Vite  
+- **Styling:** Tailwind CSS  
+- **AI Processing:** Large Language Model API  
+- **Syntax Highlighting:** Code block rendering for readable outputs  
+
+---
+
+## 🚀 Getting Started
+
+Clone the repository:
+
+```
+git clone https://github.com/your-username/explain-my-error.git
+```
+
+Navigate to the project folder:
+
+```
+cd explain-my-error
+```
+
+Install dependencies:
+
+```
+npm install
+```
+
+Start the development server:
+
+```
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🎯 Project Goal
 
-**Use GitHub Codespaces**
+Developers—especially beginners—often struggle with unclear error messages.  
+ExplainMyError focuses on **bridging the gap between error output and understanding**, helping developers debug faster and learn along the way.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+## 🤝 Contributing
 
-This project is built with:
+Contributions, improvements, and suggestions are welcome.  
+Feel free to open issues or submit pull requests.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
+## 📜 License
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+This project is licensed under the **MIT License**.
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
+## ⭐ Support
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+If you found this project helpful, consider giving the repository a **star**.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+> ~Muhammad Haris Ahsan
